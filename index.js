@@ -15,6 +15,13 @@ function logWhisper(textThree){
 }
 
 function sayHiToHeadphonedRoommate(textFour){
-    return "I can't hear you!"
-    
+    if (textFour.toLowerCase() === textFour) {
+        return "I can't hear you!";
+      } else if (textFour.toUpperCase() === textFour) {
+        return "YES INDEED!";
+      } else if (textFour === "I love you, Grandma.") {
+        return "I love you, too.";
+      } else {
+        return "I would love to!";
+      }
 }
